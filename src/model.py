@@ -1,13 +1,13 @@
 from llama_cpp import Llama
 
-from src.propmpts import PROMPT
+from src.prompts import PROMPT
 
 
 class Model:
     def __init__(self, path: str = "model/mistral-7b-openorca.Q2_K.gguf"):
         self.llama = Llama(
             model_path=path,
-            n_ctx=2048*2,
+            n_ctx=2048 * 2,
             n_gpu_layers=30,
         )
 

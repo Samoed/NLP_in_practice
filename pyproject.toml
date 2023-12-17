@@ -32,6 +32,9 @@ fix = true
 target-version = "py38"
 line-length = 120
 
+[tool.ruff.extend-per-file-ignores]
+"prompts.py" = ["E501"]
+
 [tool.mypy]
 python_version = "3.8"
 strict = true

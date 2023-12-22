@@ -1,6 +1,6 @@
 # nlp_in_practice
 ## Установка зависимостей
-Минимальная версия python: 3.10
+Минимальная версия **python3.10**
 ```bash
 pip install -r requirements.txt
 ```

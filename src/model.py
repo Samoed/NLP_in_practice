@@ -1,6 +1,7 @@
 from llama_cpp import Llama
 
-from src.prompts import PROMPT
+from prompts import PROMPT
+import os
 
 
 class Model:

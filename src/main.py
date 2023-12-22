@@ -1,7 +1,7 @@
 import gradio as gr
 
-from src.model import Model
-from src.prompts import EXAMPLE_RESUME, ICONIC_RESUME, VACANCY
+from model import Model
+from prompts import EXAMPLE_RESUME, ICONIC_RESUME, VACANCY
 
 model = Model()
 

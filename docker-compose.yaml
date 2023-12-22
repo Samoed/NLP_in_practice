@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  llm:
+    build: '.'
+    image: resume_suggest
+    ports:
+      - "8080:80"

@@ -23,8 +23,8 @@ python src/main.py
 
 ## Производительность
 Генерация ответа на:
-- CPU: 6 минут
-- GPU: 30 секунды
+- CPU: 6 минут (Intel i7-11370H (8) @ 4.800GHz)
+- GPU: 30 секунды (GeForce RTX 3050)
 
 ## Проведены эксперименты
 1) Prompt engineering — Chain of Thoughts, Role play, общая чувствительность запроса к модели.

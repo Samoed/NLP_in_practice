@@ -1,7 +1,6 @@
 from llama_cpp import Llama
 
 from prompts import PROMPT
-import os
 
 
 class Model:
@@ -18,5 +17,5 @@ class Model:
             vacancy=vacancy,
             iconic_resume=iconic_resume,
         )
-        completion = self.llama(prompt)
+        completion = self.llama(prompt, temperature=0.2, top_k=15, top_p=0.95)
         return completion["choices"][0]["text"]

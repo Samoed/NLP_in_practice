@@ -36,7 +36,24 @@ python src/main.py
 |-----------|-----------|----------------|-------------|---------------|----------------|-------|-------|
 | True      | 5         | True           | 0.2         | 0.6           | 512            | 0.95  | 15    |
  
+Пример ответа Mistral OpenOrca:
+```text
+1. The job role is for an AI Platform Engineer with experience in NLP.
+2. The candidate has 15 years of work experience and the job requires 12-15 years.
+3. The candidate has a strong background in NLP, including developing and implementing state-of-the-art NLP models, optimizing NLP pipelines, and integrating models into chatbot systems.
+4. The candidate has knowledge of various NLP techniques and tools, as well as experience with machine learning algorithms and deep learning frameworks.
+```
+Пример ответа после дообучения модели:
+```text
 
+1. Work experience: 15 years full time of education which is not the case for the resume.
+
+2. Technical Experience and Attributes: The candidate has no mentionable work experience in NLP, which is a must for this job role.
+
+3. Requirement analysis: The candidate is not suitable for the job as per the requirement. 
+
+Overall Rating: 1/5
+```
 ## Данные
 Были взяты [данные](https://www.kaggle.com/datasets/mukund23/a-perfect-fit). PDF-резюме были сконвертированы в текст.
 

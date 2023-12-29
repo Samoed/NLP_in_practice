@@ -38,10 +38,22 @@ python src/main.py
  
 
 ## Данные
-Были взяты [данные](https://www.kaggle.com/datasets/mukund23/a-perfect-fit). PDF-резюме были сконвертированы в текст. 
+Были взяты [данные](https://www.kaggle.com/datasets/mukund23/a-perfect-fit). PDF-резюме были сконвертированы в текст.
 
 ## Обучение модели
 Модель обучалась с помощью Supervised Fine-tuning на промпте:
 ```python
 f"Target resume: {example['target_resume']}\n### Input resume: {example['resume_text']}\n### Score: {example['Match Percentage']}"
+```
+
+## Масштабирование
+При масштабировании приложения можно добавить API к модели, к которому будет обращаться клиетское обращение, и балансировщик нагрузки, который будет распределять запросы по различным копиям сервиса с моделями.
+
+```mermaid
+graph LR
+    A[API с моделью]
+    B[API с моделью]
+    C[балансировщик нагрузки] --> A
+    C --> B
+    D[клиентское приложение] --> C
 ```

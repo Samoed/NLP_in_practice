@@ -4,7 +4,7 @@ from prompts import PROMPT
 
 
 class Model:
-    def __init__(self, path: str = "model/model_with_lora-q2_k.gguf"):
+    def __init__(self, path: str = "model/mistral-7b-openorca.Q2_K.gguf"):
         self.llama = Llama(
             model_path=path,
             n_ctx=2048 * 2,
